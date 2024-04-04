@@ -1,0 +1,12 @@
+<div class="flex justify-between items-center mx-4">
+
+    <div class="flex-1 w-10/12">
+        <a href="/" class="btn btn-ghost normal-case justify-center items-center h-auto text-3xl p-4 px-6" aria-label="Home">Lego Collection</a>      
+    </div>
+    
+    <div class=" hidden md:flex items-center justify-center w-2/12 text-lg">
+        <a class="<%= (page == "/lego/sets") ? 'active' : '' %> btn btn-ghost" href="/lego/sets" aria-label="lego/sets">View Collection</a>
+        <a class="<%= (page == "/about") ? 'active' : '' %> btn btn-ghost" href="/about" aria-label="About">About</a>
+    </div>
+</div> 
+<br> 
