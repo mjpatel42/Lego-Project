@@ -7,91 +7,124 @@
   <title>Lego Collection</title>
   <link rel="stylesheet" href="/css/main.css" />
 
-  <style>
-    .card {
-        height: 100%;
-        margin: 10px;
-        background-color: rgba(0, 0, 0, 0.1); ;
-    }
-    
-    .card img {
-        height: 200px;
-        object-fit: cover; 
-    }
-
-  </style>
 </head>
 
 <body tabindex="-1">
-    <%- include('partials/navbar', {page:'/home'}) %>
+   <!-- Include navbar partial -->
+   <%- include('partials/navbar', { page: '/home' }) %>
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="/"></a>
+    </div>
+
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a href="/lego/sets">View Collection</a></li>
+        <li><a href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Account</summary>
+            <ul class="p-2 bg-base-100 right-0">
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-center hidden sm:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/lego/sets">View Collection</a></li>
+        <li><a href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Account</summary>
+            <ul class="p-2 bg-base-100 right-0">
+              <li><a href="/login">Login</a></li>
+              <li><a href="/register">Register</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <br />
 
   <div class="container mx-auto">
-      <div class="hero bg-base-200 rounded-lg p-6">
-          <div class="hero-content text-center ">
-              <div class="max-w-lg">
-                  <h1 class="text-5xl font-bold">Come on Come with us on a thrilling adventure with our captivating Lego world.</h1>
+
+
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center ">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Lego Collection</h1>
+
+          <p class="py-6" style="color: rgb(24, 44, 62);">LEGO enhance your creativity and brings your childhood back.</p>
+
       
-                  <p class="py-6">"Discover endless creativity and boundless fun with our diverse Lego collection, where imagination knows no limits. Start building today!".</p>
-              
-                  <a href="/lego/sets" class="btn btn-primary">Trust me Here is something intresting</a>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <br>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div>
-
-          <div class="card bg-base-100 shadow-xl">
-              <figure>
-              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/10258-1.jpg" alt="Lego set - 10258-1">
-              </figure>
-              <div class="card-body">
-              <h2 class="card-title">London Bus</h2>
-              <p>These MOCs can be built using only the parts in 10258-1 London Bus.</p>
-                  <div class="card-actions justify-end">
-                          <a href="/lego/sets/10258-1" class="btn btn-primary">View</a>
-                  </div>
-              </div>
-
-          </div>
-
-      </div>
-
-      <div>
-        <div class="card bg-base-100 shadow-xl">
-          <figure>
-          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/10259-1.jpg" alt="Lego Set 10259-1">
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Winter Village Station</h2>
-            <p>These MOCs can be built using only the parts in 10259-1 Winter Village Station.</p>
-            <div class="card-actions justify-end">
-                <a href="/lego/sets/10259-1" class="btn btn-primary">View</a>
-            </div>
-          </div>
+          <a href="/lego/sets" class="btn btn-primary">Explore More!!</a>
         </div>
       </div>
+    </div>
 
+    <br />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div>
-      <div class="card bg-base-100 shadow-xl">
+
+        <div class="card bg-base-100 shadow-xl">
           <figure>
-          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/10260-1.jpg" alt="Lego Set - 10260-1">
+            <img class="w-full" src="https://cdn.rebrickable.com/media/sets/0241357594-1.jpg" alt="Lego set" />
           </figure>
           <div class="card-body">
-          <h2 class="card-title">Downtown Diner</h2>
-          <p>These MOCs can be built using only the parts in 10260-1 Downtown Diner..</p>
-              <div class="card-actions justify-end">
-                  <a href="/lego/sets/10260-1" class="btn btn-primary">View</a>
-              </div>
+            <h2 class="card-title">Star Wars: Build Your Own Adventure: Galactic Missions</h2>
+            <p>Published by DK Children (Dorling Kindersley) as a hardcover released on August 1, 2019 in the United Kingdom and on August 6, 2019 in the United States.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/0241357594-1" class="btn btn-primary">View</a>
+            </div>
           </div>
-      </div>
 
+        </div>
       </div>
-  </div>
-  
+      <div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://cdn.rebrickable.com/media/sets/010423-1.jpg" alt="Lego Set" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">The Majestic Horse</h2>
+            <p>Designed by previous 2017 Lego Masters UK winners Nathan Dias and Steve Guinness.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/010423-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://cdn.rebrickable.com/media/sets/021-1.jpg" alt="Lego Set" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Wheel Set</h2>
+            <p>This set was released in America (USA/CAN) by Samsonite in 1966. It was never released in Europe</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/021-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
